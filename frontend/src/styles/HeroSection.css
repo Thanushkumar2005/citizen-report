@@ -1,0 +1,88 @@
+.hero {
+  padding: 30px 40px;
+}
+
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.hero-left img {
+  width: 100px;
+  height: 100px;
+}
+
+.hero-left h1 {
+  color: #0d4d8c;
+  margin: 10px 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.hero-buttons button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #e6d5d5;
+}
+
+.primary-btn {
+  background: #135e9f !important;
+  color: white;
+}
+
+.stats-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 40px;
+}
+
+.feature-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 40px;
+}
+
+@media(max-width: 992px){
+
+  .hero-header{
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .stats-grid,
+  .feature-grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media(max-width: 600px){
+
+  .stats-grid,
+  .feature-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+  .hero-left{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+}

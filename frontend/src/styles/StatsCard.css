@@ -1,0 +1,23 @@
+.stats-card {
+  background: #41dd41;
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+  min-height: 160px;
+}
+
+.stats-card svg {
+  color: #1f7d1f;
+}
+
+.stats-card h4 {
+  margin-top: 15px;
+}
+
+.stats-card p {
+  margin: 8px 0;
+}
+
+.stats-card h2 {
+  font-size: 35px;
+}

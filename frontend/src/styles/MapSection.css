@@ -1,0 +1,18 @@
+.map-section {
+  padding: 40px;
+}
+
+.map-content {
+  margin-bottom: 25px;
+}
+
+.map-content h2 {
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  background: #a7ff4f;
+  padding: 15px 25px;
+  font-size: 28px;
+  font-weight: 500;
+}
