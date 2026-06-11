@@ -1,5 +1,4 @@
 import "../styles/Sign-in.css";
-import Footer from "./Footer";
 
 function SignIn() {
   return (
@@ -31,9 +30,7 @@ function SignIn() {
           <button type="submit">Sign In</button>
         </form>
       </div>
-      <Footer />
     </div>
   );
 }
-
 export default SignIn;

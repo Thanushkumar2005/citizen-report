@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
@@ -18,9 +18,11 @@ function Home() {
 }
 
 function App() {
+  const location = useLocation();
+
   return (
     <>
-      <Navbar />
+      {location.pathname !== "/signin" && <Navbar />}
 
       <Routes>
         <Route path="/" element={<Home />} />
